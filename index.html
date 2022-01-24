@@ -16,12 +16,14 @@
     <!-- font Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- link for a css stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- title -->
     <title>Love calculator</title>
 </head>
 
-<body>
+<body class="text-center">
     <!-- The App's heading, this section explains what this is about. -->
 
 
@@ -31,16 +33,20 @@
     <!-- The body of the app. two text input areas, one for each person, inside a form. -->
     <form action="#" method="post">
         <!-- person number 1 -->
-        <label for="first-person">
-            Enter the Name of the first person:
-            <input type="text" name="first-person" id="first-person">
-        </label>
-        <!-- Person number 2 -->
-        <label for="second-person">
-            Enter the Name of the second person:
-            <input type="text" name="second-person" id="second-person">
-        </label>
+        <div class="row">
+            <label for="first-person" class="col-12">
+                Enter the Name of the first person:
+                <input type="text" name="first-person" id="first-person">
+            </label>
+        </div>
 
+        <!-- Person number 2 -->
+        <div class="row">
+            <label for="second-person" class="col-12">
+                Enter the Name of the second person:
+                <input type="text" name="second-person" id="second-person">
+            </label>
+        </div>
         <!-- Button to calculate. will have an eventlistiner that will execute our random number generator function -->
         <button type="button" class="btn btn-lg btn-outline-danger"
             onclick="randomPercentageGenerator(); this.onclick=null;"><i class="fas fa-heart"></i> Calculate</button>
