@@ -1,0 +1,4 @@
+An App that uses the power of internet to 
+calculate precisely the amount of Love between two human beings...
+Kidding, simple project using bootstrap 5 and javaScript. 
+It´s a ramdom number generator :)
